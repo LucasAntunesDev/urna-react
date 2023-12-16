@@ -1,7 +1,6 @@
 {
-  "homepage": "https://lucasantunes06.github.io",
   "name": "urna-react",
-  "private": false,
+  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
