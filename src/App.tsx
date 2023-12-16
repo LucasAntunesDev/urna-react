@@ -1,6 +1,6 @@
-import React, { useState, useEffect, MouseEventHandler } from "react";
-import Candidato from "./Components/Candidato";
-import Teclado from "./Components/Teclado";
+import { useState, useEffect} from "react";
+import Candidato from "./components/Candidato";
+import Teclado from "./components/Teclado";
 
 // O componente principal da urna eletrônica
 type Candidato = {
