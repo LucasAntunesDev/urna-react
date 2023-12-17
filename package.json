@@ -1,6 +1,7 @@
 {
   "name": "urna-react",
-  "private": true,
+  "homepage": "lucasantunes06.github.io/urna-react/",
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -26,8 +27,6 @@
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
-    "flowbite": "^2.2.0",
-    "flowbite-react": "^0.7.0",
     "gh-pages": "^6.1.0",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
