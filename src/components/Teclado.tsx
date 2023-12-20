@@ -6,7 +6,6 @@ type TecladoProps = {
 };
 
 const Teclado = ({ onInserir, onCorrige, onVotar, onBranco }: TecladoProps) => {
- // Um array com os números de 0 a 9
  const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
  return (
@@ -35,17 +34,14 @@ const Teclado = ({ onInserir, onCorrige, onVotar, onBranco }: TecladoProps) => {
     ))}
    </div>
 
-   <div className="flex items-center gap-x-4 mt-4">
-    <button onClick={onBranco} className="bg-zinc-50 uppercase p-1 font-bold">
+   <div className="flex items-center gap-x-4 mt-4 *:uppercase *:p-1 *:font-bold">
+    <button onClick={onBranco} className="bg-zinc-50">
      BRANCO
     </button>
-    <button
-     onClick={onCorrige}
-     className="bg-orange-500 uppercase p-1 font-bold"
-    >
+    <button onClick={onCorrige} className="bg-orange-500">
      CORRIGE
     </button>
-    <button onClick={onVotar} className="bg-green-500 uppercase p-1 font-bold">
+    <button onClick={onVotar} className="bg-green-500">
      VOTAR
     </button>
    </div>
