@@ -22,7 +22,6 @@ const Teclado = ({ onInserir, onCorrige, onVotar, onBranco }: TecladoProps) => {
    </div>
    <div className="grid grid-cols-3 gap-4 w-56 justify-items-center  ">
     {numeros.map((numero) => (
-     // Um botão para cada número que chama a função onInserir com o valor do número
      <button
       key={numero}
       onClick={() => onInserir(numero)}

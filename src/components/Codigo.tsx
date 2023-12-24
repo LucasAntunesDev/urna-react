@@ -1,5 +1,3 @@
-// import React from "react";
-
 type Props = {
   codigo: string;
   setCodigo: (codigo: string) => void;
