@@ -26,8 +26,8 @@ const Teclado = ({ onInserir, onCorrige, onVotar, onBranco }: TecladoProps) => {
      <button
       key={numero}
       onClick={() => onInserir(numero)}
-      className="bg-neutral-900 text-zinc-50 rounded-md w-fit py-1 border
-       border-neutral-600 last:ml-[10rem]"
+      className="bg-neutral-900 hover:bg-neutral-950 focus:outline-neutral-500 focus:outline text-zinc-50 rounded-md w-fit py-1 border
+       border-neutral-600 last:ml-[10rem] transition-normal"
      >
       {numero}
      </button>
@@ -35,13 +35,13 @@ const Teclado = ({ onInserir, onCorrige, onVotar, onBranco }: TecladoProps) => {
    </div>
 
    <div className="flex items-center gap-x-4 mt-4 *:uppercase *:p-1 *:font-bold">
-    <button onClick={onBranco} className="bg-zinc-50">
+    <button onClick={onBranco} className="bg-zinc-50 hover:bg-zinc-200 focus:outline-white focus:outline focus:bg-zinc-50 transition-normal">
      BRANCO
     </button>
-    <button onClick={onCorrige} className="bg-orange-500">
+    <button onClick={onCorrige} className="bg-orange-500 hover:bg-orange-600 focus:outline-orange-300 focus:outline focus:bg-orange-500 transition-normal">
      CORRIGE
     </button>
-    <button onClick={onVotar} className="bg-green-500">
+    <button onClick={onVotar} className="bg-green-500 hover:bg-green-600 focus:outline-green-300 focus:outline focus:bg-green-500 transition-normal">
      VOTAR
     </button>
    </div>

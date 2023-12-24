@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+ .transition-normal{
+  @apply transition ;
+  @apply duration-300 ;
+  @apply ease-in-out;
+ }
+}
+
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
